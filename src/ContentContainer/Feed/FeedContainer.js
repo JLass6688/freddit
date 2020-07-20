@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FilterBar from './FilterBar';
 import View from './View';
 import Filter from './Filter';
+import FeedPost from './FeedPost';
 
 
 class FeedContainer extends Component {
@@ -59,6 +60,7 @@ class FeedContainer extends Component {
 			     	filterOptions={this.state.filterOptions}
 			     	filterClick={this.changeFilter}
 			     />
+			     <FeedPost />
 			   </div>
 	}
 }

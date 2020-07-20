@@ -149,6 +149,7 @@ div.filterBar {
   height: 60px;
   background-color: #FFF;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 div.filterBar button.filterButton {
@@ -236,5 +237,84 @@ img.sortMenuArrowIcon {
   margin: 8px 4px 8px 20px;
 }
 
+div.feedPostContainer {
+  background-color: #FFF;
+  border-radius: 4px;
+}
 
+div.feedPostContainer h2 {
+  margin: 4px 2px;
+}
+
+div.voteBarContainer {
+  float: left;
+  width: 5%;
+  background-color: #F8F9FA;
+  text-align: center;
+  margin-top: 5px;
+}
+
+div.voteBarContainer p {
+  margin: 5px 0;
+  font-weight: 800;
+  font-size: 10pt;
+}
+
+div.voteBarContainer svg {
+  width: 40%;
+  cursor: pointer;
+  fill: #878A8C;
+}
+
+div.voteBarContainer svg:first-child {
+  vertical-align: bottom;
+}
+
+div.voteBarContainer svg:first-child:hover {
+  fill: #FF7B01;
+}
+
+div.voteBarContainer svg:last-child {
+  vertical-align: top;
+}
+
+div.voteBarContainer svg:last-child:hover {
+  fill: #0079D3;
+}
+
+div.authorBarContainer {
+  margin: 3px 0;
+}
+
+div.authorBarContainer * {
+  display: inline-block;
+  margin: 1px 3px;
+}
+
+div.authorBarContainer p {
+  color: #929597;
+  font-size: 9pt;
+}
+
+div.socialBarContainer {
+  padding-bottom: 10px;
+}
+
+div.socialBarContainer * {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 10pt;
+  color: #878A8C;
+}
+
+div.socialBarContainer p {
+  margin: 0 3px;
+}
+
+div.socialBarContainer button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
