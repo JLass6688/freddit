@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 
 const trending_filepath = './JsonData/trending.json';
+const popular_filepath = './JsonData/popular.json';
 
 
 app.get('/trending', (req, res) => {
@@ -16,8 +17,10 @@ app.get('/trending', (req, res) => {
   res.send(json);
 });
 
-app.get('/feed', (req, res) => { // new
-  res.send('Homepage! Hello world.');
+app.get('/popular', (req, res) => { // new
+  let rawData = fs.readFileSync(path.resolve(__dirname, popular_filepath));
+  let json = JSON.parse(rawData);
+  res.send(json);
 });
 
 

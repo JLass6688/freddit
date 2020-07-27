@@ -1,10 +1,10 @@
 import React from 'react';
 
-const authorBar = () => {
+const authorBar = (props) => {
 	return (
 		<div className="authorBarContainer">
-			<h5>r/news</h5>
-			<p>Posted by Jake 3 Days ago</p>
+			<h5>r/{props.subreddit}</h5>
+			<p>Posted by {props.author} {props.timestamp} ago</p>
 		</div>
 	);
 }
